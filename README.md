@@ -4,9 +4,11 @@ PRINT DEBUGGING FOR LIFE <3
 
 ## Contents
 
-*trace()* Takes any number of arguments and datatypes and attempts to use JSON to render them to the error log.
+**trace()** Takes any number of arguments and datatypes and attempts to use JSON to render them to the error log.
 
-*tracef()* Prints context and arguments of current function.
+**tracef()** Prints context and arguments of current function.
+
+Example:
 
 ```php
 class Foo {
@@ -14,9 +16,10 @@ class Foo {
     tracef();
   }
 }
-$foo = new Foo();
-$foo->SomeFunction("Hello World!");
+(new Foo())->SomeFunction("Hello World!");
 ```
+
+Output:
 
 ```text
 "Foo->SomeFunction" ["Hello World!"]
