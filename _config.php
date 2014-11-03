@@ -1,9 +1,8 @@
 <?PHP
 
 /*
- * Debugging helper functions
+ * Takes any number of arguments and datatypes and attempts to use JSON to render them to the error log
  */
-
 function trace(){
    $result = [];
    $args = func_get_args();
@@ -15,6 +14,19 @@ function trace(){
    error_log($output);
 }
 
+/*
+ * Prints the object, function and arguments that is calling tracef().
+ *
+ * class Foo {
+ *    public function SomeFunction(){
+ *       tracef();
+ *    ...
+ *
+ * Output:
+ *
+ * [Mon Nov 03 17:54:51 2014] [error] [client 111.69.135.22] "Foo->SomeFunction" []
+ *
+ */
 function tracef($depth=1){
    $trace = debug_backtrace();
    for ($i=0; $i < $depth; ++$i){
