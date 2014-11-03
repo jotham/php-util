@@ -9,7 +9,6 @@ PRINT DEBUGGING FOR LIFE <3
 **tracef()** Prints context and arguments of current function.
 
 Example:
-
 ```php
 class Foo {
   public function SomeFunction($bar){
@@ -20,7 +19,6 @@ class Foo {
 ```
 
 Output:
-
 ```text
 "Foo->SomeFunction" ["Hello World!"]
 ```
