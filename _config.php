@@ -24,7 +24,7 @@ function trace(){
  *
  * Output:
  *
- * [Mon Nov 03 17:54:51 2014] [error] [client 111.69.135.22] "Foo->SomeFunction" []
+ * [Mon Nov 03 17:54:51 2014] [error] [client 127.0.0.1] "Foo->SomeFunction" []
  *
  */
 function tracef($depth=1){
