@@ -1,6 +1,6 @@
 # PHP UTIL
 
-PRINT DEBUGGING FOR LIFE <3
+PRINT DEBUGGING FOR LIFE :paw_prints:
 
 ## Contents
 
