@@ -33,7 +33,7 @@ function tracef($metadata=null, $depth=null){
          $args[] = $obj['class'] . $obj['type']. $obj['function'];
       }
       $args[] = $obj['args'];
-      if ( $i == 1 && !is_null($metadata) ) $args[] = array('metadata' => $metadata);
+      if ( $i == 1 && !is_null($metadata) ) $args[] = $metadata;
       error_log(($i>1?' ':'').__buildStr($args));
    }
 }
